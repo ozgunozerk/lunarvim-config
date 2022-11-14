@@ -233,3 +233,7 @@ lvim.builtin.lualine.options.section_separators = { left = "", right = "" 
 
 -- disable LSP in-line texts
 lvim.lsp.diagnostics.virtual_text = false
+
+-- shortcuts for buffer cycle
+lvim.keys.normal_mode["<S-j>"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
