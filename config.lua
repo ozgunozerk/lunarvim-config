@@ -10,7 +10,7 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save.enabled = false
+lvim.format_on_save.enabled = true
 lvim.colorscheme = "tokyonight"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -237,3 +237,15 @@ lvim.lsp.diagnostics.virtual_text = false
 -- shortcuts for buffer cycle
 lvim.keys.normal_mode["<S-j>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+
+-- sets relative line numbers for quick navigation
+vim.opt.relativenumber = true
+
+-- show hidden files in the dashboard
+lvim.builtin.lir.show_hidden_files = true
+
+-- telescope theme (and enable preview)
+lvim.builtin.telescope.pickers.find_files.theme = default
+lvim.builtin.telescope.pickers.find_files.previewer = default
+lvim.builtin.telescope.pickers.git_files.theme = default
+lvim.builtin.telescope.pickers.git_files.previewer = default
