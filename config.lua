@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = true
-lvim.colorscheme = "rose-pine"
+lvim.colorscheme = "terafox"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -162,24 +162,34 @@ lvim.builtin.treesitter.highlight.enable = true
 --   },
 -- }
 
-require('rose-pine').setup({
-	--- @usage 'main' | 'moon'
-	dark_variant = 'moon'
-})
-
 -- Additional Plugins
 lvim.plugins = {
   {
     "EdenEast/nightfox.nvim",
-    "rose-pine/neovim",
-    as = 'rose-pine',
-    config = function()
-        vim.cmd('colorscheme rose-pine')
-    end
     -- "folke/trouble.nvim",
     -- cmd = "TroubleToggle",
   },
 }
+
+-- terafox with darker background, and italicized comments :)
+require("nightfox").setup({
+  palettes = {
+    -- Custom duskfox with black background
+    terafox = {
+      bg1 = "#1f212e", -- Black background
+      bg0 = "#232334", -- Alt backgrounds (floats, statusline, ...)
+      bg3 = "#27273a", -- 55% darkened from stock
+      sel0 = "#2f2f46", -- 55% darkened from stock
+    },
+  },
+  options = {
+    styles = {
+      comments = "italic",
+      keywords = "bold",
+      types = "italic",
+    }
+  }
+})
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
@@ -208,7 +218,7 @@ local colors = {
   color9 = "#3e4b59",
   color10 = "#36a3d9",
   color11 = "#ade66c",
-  color12 = "#1f212e",
+  color12 = "#2b2b40",  -- status bar, inner-background
 }
 
 lvim.builtin.lualine.options.theme = {
