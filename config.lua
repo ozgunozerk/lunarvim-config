@@ -176,6 +176,7 @@ require("nightfox").setup({
   palettes = {
     -- Custom duskfox with black background
     terafox = {
+      red = { base = "#ad5c7c", bright = "#b97490", dim = "#934e69" },
       bg1 = "#1f212e", -- Black background
       bg0 = "#232334", -- Alt backgrounds (floats, statusline, ...)
       bg3 = "#27273a", -- 55% darkened from stock
@@ -185,7 +186,7 @@ require("nightfox").setup({
   options = {
     styles = {
       comments = "italic",
-      keywords = "bold",
+      keywords = "bold, italic",
       types = "italic",
     }
   }
