@@ -176,6 +176,7 @@ require("nightfox").setup({
   palettes = {
     -- Custom duskfox with black background
     terafox = {
+      green = { base = "#CDCD94", bright = "#E6DE96", dim = "#B4BD91" },
       red = { base = "#ad5c7c", bright = "#b97490", dim = "#934e69" },
       bg1 = "#1f212e", -- Black background
       bg0 = "#232334", -- Alt backgrounds (floats, statusline, ...)
