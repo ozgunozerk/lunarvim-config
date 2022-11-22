@@ -166,6 +166,7 @@ lvim.builtin.treesitter.highlight.enable = true
 lvim.plugins = {
   {
     "EdenEast/nightfox.nvim",
+    { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
     -- "folke/trouble.nvim",
     -- cmd = "TroubleToggle",
   },
@@ -220,7 +221,7 @@ local colors = {
   color9 = "#3e4b59",
   color10 = "#36a3d9",
   color11 = "#ade66c",
-  color12 = "#2b2b40",  -- status bar, inner-background
+  color12 = "#2b2b40", -- status bar, inner-background
 }
 
 lvim.builtin.lualine.options.theme = {
