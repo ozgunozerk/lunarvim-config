@@ -2,7 +2,6 @@
 lvim is the global options object
 
 Linters should be
-filled in as strings with either
 a global executable or a path to
 an executable
 ]]
@@ -19,6 +18,11 @@ lvim.colorscheme = "terafox"
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.normal_mode.d = "\"_d"
+lvim.keys.normal_mode.c = "\"_c"
+lvim.keys.normal_mode['<S-d>'] = '"ad'
+lvim.keys.normal_mode['<S-c>'] = '"ac'
+lvim.keys.normal_mode['<S-p>'] = '"ap'
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
