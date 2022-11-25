@@ -23,6 +23,7 @@ lvim.keys.normal_mode.c = "\"_c"
 lvim.keys.normal_mode['<S-d>'] = '"ad'
 lvim.keys.normal_mode['<S-c>'] = '"ac'
 lvim.keys.normal_mode['<S-p>'] = '"ap'
+lvim.keys.normal_mode['bb'] = ":q<cr>"
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
