@@ -24,6 +24,7 @@ lvim.keys.normal_mode['<S-d>'] = '"ad'
 lvim.keys.normal_mode['<S-c>'] = '"ac'
 lvim.keys.normal_mode['<S-p>'] = '"ap'
 lvim.keys.normal_mode['bb'] = ":q<cr>"
+lvim.keys.normal_mode["<leader>fml"] = ":CellularAutomaton make_it_rain<CR>"
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
@@ -170,6 +171,7 @@ lvim.builtin.treesitter.highlight.enable = true
 -- Additional Plugins
 lvim.plugins = {
   {
+    'eandrju/cellular-automaton.nvim',
     "EdenEast/nightfox.nvim",
     { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
     -- "folke/trouble.nvim",
