@@ -304,8 +304,9 @@ require("nightfox").setup({
     terafox = {
       green = { base = "#CDCD94", bright = "#E6DE96", dim = "#B4BD91" },
       red = { base = "#ad5c7c", bright = "#b97490", dim = "#934e69" },
-      bg1 = "#1f212e", -- Black background
-      bg0 = "#232334", -- Alt backgrounds (floats, statusline, ...)
+      blue = { base = "#68A7C0", bright = "#73B3CC", dim = "#619CB3" },
+      bg1 = "#191B24", -- Black background
+      bg0 = "#0E0E11", -- Alt backgrounds (floats, statusline, ...)
       bg3 = "#27273a", -- 55% darkened from stock
       sel0 = "#2f2f46", -- 55% darkened from stock
     },
