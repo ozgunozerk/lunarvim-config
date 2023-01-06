@@ -18,10 +18,12 @@ lvim.colorscheme = "terafox"
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode.d = "\"_d"
-lvim.keys.normal_mode.c = "\"_c"
-lvim.keys.normal_mode['<S-d>'] = '"ad'
-lvim.keys.normal_mode['<S-c>'] = '"ac'
+lvim.keys.normal_mode.d = '"ad'
+lvim.keys.normal_mode.c = '"ac'
+lvim.keys.normal_mode.x = '"ax'
+lvim.keys.visual_mode.d = '"ad'
+lvim.keys.visual_mode.c = '"ac'
+lvim.keys.visual_mode.x = '"ax'
 lvim.keys.normal_mode['<S-p>'] = '"ap'
 lvim.keys.normal_mode['bb'] = ":q<cr>"
 lvim.keys.normal_mode["<leader>fml"] = ":CellularAutomaton make_it_rain<CR>"
@@ -133,12 +135,6 @@ lvim.builtin.treesitter.highlight.enable = true
 --   --Enable completion triggered by <c-x><c-o>
 --   buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 -- end
-
-local formatters = require "lvim.lsp.null-ls.formatters"
-formatters.setup {
-  { command = "stylua", filetypes = { "lua" } },
-  { command = "prettier", filetypes = { "typescript", "javascript" } }
-}
 
 local mason_path = vim.fn.glob(vim.fn.stdpath "data" .. "/mason/")
 local codelldb_adapter = {
